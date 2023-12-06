@@ -1,0 +1,8 @@
+---
+  - name: installapache
+   hosts: webserverprod webserverdev
+   tasks:
+     - name: install apache
+       apt:
+        name: apache2
+        state: latest
